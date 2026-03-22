@@ -1,0 +1,169 @@
+{
+	"personal_info": {
+		"full_name": "Zurita Maximiliano",
+		"location": "Buenos Aires, Tigre, Argentina",
+		"email": "maxi.zurita.seb@gmail.com",
+		"phone": "+54 1138522180",
+		"linkedin": "linkedin.com/in/maximilianozurita"
+	},
+	"languages": [
+		{ "language": "Inglés", "level": "B1" }
+	],
+	"education": [
+		{
+			"institution": "Universidad Tecnológica Nacional",
+			"degree": "Ingeniería industrial automotriz",
+			"end_date": "2022"
+		},
+		{
+			"institution": "Universidad Tecnológica Nacional",
+			"degree": "Tecnicatura Universitaria en Programación",
+			"end_date": "2025"
+		}
+	],
+	"summary_base": "Ingeniero con fuerte interés en el mundo de la IA. Tengo experiencia en automatización de procesos, manejo de grandes volúmenes de datos y desarrollo de software. Considero que puedo aportar nuevos puntos de vistas teniendo en cuenta mi experiencia en otros rubros. Soy una persona fuertemente motivada por los desafíos intelectuales de cualquier tipo.",
+	"technical_skills": {
+		"programming_languages": ["Python", "Perl", "Go", "Lua", "C", "C++", "JavaScript", "C#", "SQL", "HTML", "CSS", "jQuery", ".NET", "Java"],
+		"data_engineering": ["ETL", "SQL avanzado", "Modelado de datos", "Pandas", "ElasticSearch"],
+		"backend": ["Node.js", "Express.js", "Sequelize", "API REST"],
+		"databases": ["MariaDB", "MySQL", "SQL Server", "MongoDB"],
+		"tools": ["Linux", "Git", "GitHub", "SVN", "Jira", "Excel", "Power BI", "Postman", "Selenium", "Claude Code", "AutoCAD"],
+		"methodologies": ["Kanban", "Lean Manufacturing", "Kaizen"]
+	},
+	"experience": [
+		{
+			"id": "exp1",
+			"company": "E-Planning",
+			"role": "Software Engineer",
+			"start_date": "02/2022",
+			"end_date": "Presente",
+			"description": "Desarrollo y mantenimiento de microservicios para una empresa de ad-server",
+			"responsibilities": [
+				"Desarrollo y mantenimiento de interfaces web utilizadas por clientes externos e internos utilizando JavaScript, jQuery, HTML y CSS con renderizado server-side y client-side.",
+				"Implementación de funcionalidades frontend integradas con servicios backend dentro de la plataforma de ad-server.",
+				"Desarrollo de APIs REST, handlers y endpoints para consumo interno y externo dentro del ecosistema de servicios del adserver.",
+				"Trabajo diario desde entornos de desarrollo Linux utilizando máquinas virtuales alojadas en servidores internos.",
+				"Desarrollo de scripts para automatización de procesos internos utilizando Python, Perl, SQL y Bash.",
+				"Implementación de procesos de extracción, transformación y carga de datos (ETL) para automatizar flujos de procesamiento de información.",
+				"Integración con APIs internas para obtener datos, procesarlos y almacenarlos en bases de datos. Con respuestas o procesamiento de XML o JSON",
+				"Desarrollo de informes estadísticos automatizados basados en grandes volúmenes de datos.",
+				"Construcción de pipelines de generación de reportes que incluyen consultas SQL, lógica backend, validaciones y visualización en dashboards.",
+				"Análisis y procesamiento de datasets de gran escala provenientes del sistema de ad-serving.",
+				"Optimización de consultas SQL sobre grandes volúmenes de datos.",
+				"Implementación de estrategias de optimización de consultas mediante uso de índices, joins optimizados y tablas temporales.",
+				"Trabajo con esquemas de bases de datos particionadas y sharding, donde cada cliente posee su propio shard de datos.",
+				"Consulta y procesamiento de información distribuida entre múltiples shards.",
+				"Uso de tablas merge y diferentes estrategias de agrupamiento de datos para optimizar tiempos de consulta.",
+				"Desarrollo de consultas complejas que requieren pre-filtrado de datos para reducir volumen procesado.",
+				"Optimización del rendimiento de consultas analíticas utilizadas para reportes y métricas.",
+				"Desarrollo de algoritmos publicitarios en tiempo real (real-time bidding / ad matching).",
+				"Implementación de lógica de matching de anuncios utilizando C y Lua.",
+				"Trabajo con estructuras de memoria compartida (shm-tables) para procesamiento de datos en tiempo real.",
+				"Análisis del comportamiento de algoritmos publicitarios a partir de métricas estadísticas.",
+				"Desarrollo y mantenimiento de adapters utilizados para integrar sistemas externos utilizando JavaScript y Go.",
+				"Implementación de integraciones entre distintos componentes del sistema de ad-serving.",
+				"Participación en el desarrollo y mantenimiento de microservicios dentro de la arquitectura del sistema.",
+				"Desarrollo y ejecución de tests unitarios para validar nuevas funcionalidades.",
+				"Testing de APIs mediante pruebas funcionales.",
+				"Implementación de tests de integración utilizando Selenium.",
+				"Validación estadística de reportes y métricas generadas por los sistemas.",
+				"Aplicación de patrones de diseño como Factory en el desarrollo de componentes.",
+				"Trabajo bajo metodología ágil Kanban.",
+				"Gestión y seguimiento de tareas mediante Jira.",
+				"Control de versiones utilizando Git, GitHub y SVN.",
+				"Colaboración con otros desarrolladores dentro del flujo de trabajo del equipo.",
+				"Uso de Claude Code como herramienta de inteligencia artificial para asistencia en desarrollo y programación.",
+				"Resolución de problemas técnicos en entornos de testing.",
+				"Acceso a servidores de testing y producción mediante SSH.",
+				"Uso intensivo de terminal Linux para desarrollo, debugging y ejecución de scripts.",
+				"Análisis y resolución de incidencias relacionadas con procesos backend y generación de reportes.",
+				"Validación de datos procesados antes de su exposición en dashboards o APIs."
+			],
+			"technologies": ["Python", "Linux", "SQL", "git", "SVN", "javascript", "C", "Lua", "Go", "Perl", "Jira", "HTML", "CSS", "jQuery", "Claude Code"],
+			},
+		{
+			"id": "exp2",
+			"company": "SMRC",
+			"role": "Ingeniero de procesos",
+			"start_date": "03/2019",
+			"end_date": "10/2022",
+			"description": "Desarrollo de lineas de ensamble para una empresa automotriz",
+			"responsibilities": [
+				"Participación en proyectos de industrialización de productos automotrices desde etapas iniciales hasta la puesta en marcha.",
+				"Desarrollo de líneas de ensamble para nuevos productos dentro de la planta.",
+				"Análisis de requerimientos de producto y calidad en conjunto con ingenieros de calidad y de producto.",
+				"Traducción de requerimientos técnicos internos hacia especificaciones para proveedores.",
+				"Definición preliminar de dispositivos de ensamble considerando requerimientos de producto y calidad.",
+				"Participación en la planificación de los procesos productivos necesarios para la fabricación de nuevos productos.",
+				"Cálculo de demanda estimada y análisis de consumo de materiales para dimensionamiento de procesos.",
+				"Realización de cálculos de capacidad productiva.",
+				"Análisis de takt time de producción.",
+				"Cálculo de tiempos de operación y tiempos de mano de obra.",
+				"Análisis de tiempos entre operaciones dentro de la línea de producción.",
+				"Estimación de capacidad de almacenamiento necesaria para abastecer el proceso productivo.",
+				"Trabajo conjunto con el área de logística para definir estrategias de almacenamiento.",
+				"Definición de niveles de stock de seguridad.",
+				"Análisis de consumo de materiales dentro del proceso productivo.",
+				"Dimensionamiento de áreas de almacenamiento dentro de la planta.",
+				"Definición de tipos de almacenamiento adecuados para materiales y componentes.",
+				"Cálculo y definición de buffers de producto en proceso (WIP).",
+				"Diseño de layout de planta considerando el flujo de producción.",
+				"Diseño de layout de líneas de ensamble.",
+				"Optimización del flujo logístico interno dentro de la planta.",
+				"Análisis del flujo de materiales dentro del proceso productivo.",
+				"Integración de consideraciones de calidad dentro del diseño del proceso.",
+				"Búsqueda de optimización del flujo de proceso y reducción de ineficiencias.",
+				"Desarrollo de especificaciones técnicas para dispositivos de ensamble.",
+				"Desarrollo de especificaciones técnicas para dispositivos de almacenamiento.",
+				"Elaboración de hojas técnicas utilizadas para solicitar diseño y fabricación a proveedores.",
+				"Selección de proveedores para fabricación de dispositivos y equipamiento.",
+				"Coordinación técnica con proveedores durante el proceso de diseño.",
+				"Seguimiento del desarrollo y fabricación de dispositivos en plantas proveedoras.",
+				"Realización de auditorías técnicas en plantas de proveedores.",
+				"Verificación del estado de fabricación de dispositivos y equipamientos.",
+				"Seguimiento del planning de proveedores para asegurar alineación con el cronograma del proyecto.",
+				"Recepción de dispositivos en planta y realización de pruebas técnicas.",
+				"Validación del funcionamiento de dispositivos de ensamble.",
+				"Realización de pruebas de producción en líneas de ensamble.",
+				"Capacitación a personal de planta sobre el uso de dispositivos y procesos.",
+				"Optimización de la productividad durante las pruebas iniciales de línea.",
+				"Mejora continua del rendimiento de la línea buscando maximizar piezas por hora.",
+				"Elaboración de documentación técnica de procesos.",
+				"Desarrollo de diagramas de flujo de proceso.",
+				"Creación de hojas de proceso.",
+				"Desarrollo de planes de control de calidad.",
+				"Elaboración de AMFE (Análisis de Modo y Efecto de Fallas).",
+				"Definición y seguimiento de indicadores KPI del proceso productivo."
+			],
+			"technologies": ["Excel", "Power Bi", "Solid work", "AutoCad"],
+			}
+	],
+	"certifications": [
+		{
+			"name": "Programmatic Advertising",
+			"issuer": "Udemy",
+			"credential_url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-f908f868-78d5-4aef-9d4a-9039f050203d.pdf"
+		},
+		{
+			"name": "Full Stack Web Developer (Node.js)",
+			"issuer": "Digital House",
+			"credential_url": ""
+		},
+		{
+			"name": "Linux: Línea de comandos y shell script",
+			"issuer": "Udemy",
+			"credential_url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-7241d062-4184-44e1-8a0b-959ecc9203ad.pdf"
+		}
+	],
+	"soft_skills": [
+		"Pensamiento analítico",
+		"Orientación a métricas",
+		"Resolución de problemas",
+		"Trabajo interdisciplinario",
+		"Adaptabilidad",
+		"Mejora continua"
+	],
+	"metadata": {
+		"last_updated": "2026-03-08"
+	}
+}

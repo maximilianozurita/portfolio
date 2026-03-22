@@ -1,183 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio | Maximiliano Zurita</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maximiliano Zurita — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-	<div class="navbar" id="navbar">
-		<a href="#exp">Experiencia</a>
-		<a href="#skills">Habilidades</a>
-		<a href="#projects">Proyectos</a>
-		<a href="#contact">Contacto</a>
-		<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">☰</a>
-	</div>
-	<div class="container">
-		<div class="profile-card">
-			<div class="profile-pic">
-				<img src="docs/perfil.jpeg" alt="perfil">
-			</div>
 
-			<div class="profile-details">
-				<div class="intro">
-					<h2>Zurita Maximiliano</h2>
-					<h4>Full-Stack Developer</h4>
-					<div class="social">
-						<a href="https://github.com/maximilianozurita" target="_blank"><i class="fab fa-github" style="color:var(--blue)"></i></a>
-						<a href="https://www.linkedin.com/in/maximilianozurita" target="_blank"><i class="fab fa-linkedin" style="color:var(--blue-light)"></i></a>
-					</div>
-				</div>
+  <div class="layout">
 
-				<div class="contact-info">
-					<div class="row">
-						<div class="icon">
-							<i class="fa fa-map-marker" style="color:var(--blue)"></i>
-						</div>
-						<div class="content">
-							<span>Location</span>
-							<h5>Buenos Aires, Argentina</h5>
-						</div>
-					</div>
-				</div>
-				<div class="about-me">
-					<h1>Acerca de mi</h1>
-					<p>Soy un ingeniero industrial con curiosidad por la tecnología.
-					Dicha curiosidad me llevo a adentrarme en el desarrollo de software a medida que me cruzaba con desafíos tecnológicos que me hacían sentir estimulado.
-					Considero que puedo aportar nuevos puntos de vistas teniendo en cuenta mi experiencia en otros rubros.</p>
-				</div>
-				<a href="docs/Zurita_Maximiliano_CV.pdf" download="CV.pdf" class="download-btn" ><i class="fa fa-download"></i> Descargar CV </a>
-			</div>
-		</div>
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="main-content">
 
-		<div class="main-container">
-			<section id="education" class="box">
-				<h2>Educación</h2>
-				<div class="desc">
-					<h3>Universidad tecnológica nacional</h3>
-					<p><strong>Título:</strong> Ingeniería en industria automotriz</p>
-					<p><strong>Estado:</strong> Finalizado (2022)</p>
-				</div>
-				<div class="desc">
-					<h3>Universidad tecnológica nacional</h3>
-					<p><strong>Título:</strong> Tecnicatura universitaria en programación </p>
-					<p><strong>Estado:</strong> En curso</p>
-				</div>
-				<div class="container-cursos">
-					<button onclick="toggleCursos()">Cursos realizados</button>
-					<div id="cursosRealizados">
-						<ul>
-							<li>
-								<div class="desc">
-									<h3>Linux: Linea de comandos y shell script</h3>
-									<p><strong>Empresa emisora:</strong> Udemy</p>
-									<p><strong>Credencial:</strong> UC-7241d062-4184-44e1-8a0b-959ecc9203ad</p>
-									<a target="_blank" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-7241d062-4184-44e1-8a0b-959ecc9203ad.pdf" class="button"> Certificado </a>
-								</div>
-							</li>
-							<li>
-								<div class="desc">
-									<h3>Programatic advertising</h3>
-									<p><strong>Empresa emisora:</strong> Udemy</p>
-									<p><strong>Credencial:</strong> UC-f908f868-78d5-4aef-9d4a-9039f050203d</p>
-									<a target="_blank" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-f908f868-78d5-4aef-9d4a-9039f050203d.pdf"> Certificado </a>
-								</div>
-							</li>
-							<li>
-								<div class="desc">
-									<h3>Full stack web developer (Node.js)</h3>
-									<p><strong>Empresa emisora:</strong> Digital house</p>
-									<p><strong>Credencial:</strong> Ce-2023-13630305-gcaba-dggalv</p>
-									<a href="docs/CertificadoDH.pdf" download="CertificadoDH.pdf"> Certificado </a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+      <section class="section" id="summary-section">
+        <h2 class="section-title">
+          <span class="section-icon">◈</span> <span id="title-summary">Resumen</span>
+        </h2>
+        <p class="summary-text" id="summary"></p>
+      </section>
 
-			<section id="exp" class="box">
-				<h2>Experiencia Laboral</h2>
+      <section class="section" id="experience-section">
+        <h2 class="section-title">
+          <span class="section-icon">◈</span> <span id="title-experience">Experiencia</span>
+        </h2>
+        <div id="experience-list"></div>
+      </section>
 
-				<div class="experience">
-					<h3>E-Planning</h3>
-					<p><strong>Rol:</strong> Software Developer</p>
-					<p><strong>Periodo:</strong> 2022 - Actual</p>
-					<p>
-						<ul>
-							<li>- Lógica de matcheo de anuncios publicitarios en tiempo real.</li>
-							<li>- APIs REST y endpoints mediante modelos modulares.</li>
-							<li>- CRUD mediante modelos por capas y MVC.</li>
-							<li>- Creación de scripts para desplegar procesos automáticos.</li>
-							<li>- Generación de reportes estadísticos automatizados (consultas avanzadas).</li>
-							<li>- Testing API/unitarios/integrales.</li>
-						</ul>
-						<div class="skills">
-							<span class="skill-button">Perl</span>
-							<span class="skill-button">C</span>
-							<span class="skill-button">Go</span>
-							<span class="skill-button">JavaScript</span>
-							<span class="skill-button">MariaDB(SQL)</span>
-							<span class="skill-button">HTML/CSS</span>
-							<span class="skill-button">jQuery</span>
-							<span class="skill-button">Selenium</span>
-							<span class="skill-button">SVN</span>
-							<span class="skill-button">GIT/GitHub</span>
-							<span class="skill-button">Jira (Kanban)</span>
-						</div>
-					</p>
-				</div>
-			</section>
+      <section class="section" id="skills-section">
+        <h2 class="section-title">
+          <span class="section-icon">◈</span> <span id="title-skills">Skills Técnicos</span>
+        </h2>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
 
-			<section id="skills" class="box">
-				<h2>Habilidades</h2>
-				<div class="skills">
-					<span class="skill-button">HTML/CSS</span>
-					<span class="skill-button">JavaScript</span>
-					<span class="skill-button">jQuery</span>
-					<span class="skill-button">Python</span>
-					<span class="skill-button">C/C++</span>
-					<span class="skill-button">MySQL</span>
-					<span class="skill-button">MariaDB</span>
-					<span class="skill-button">SQL Server</span>
-					<span class="skill-button">GIT/GitHub</span>
-					<span class="skill-button">Selenium</span>
-					<span class="skill-button">Node.js</span>
-				</div>
-			</section>
+      <section class="section" id="education-section">
+        <h2 class="section-title">
+          <span class="section-icon">◈</span> <span id="title-education">Educación</span>
+        </h2>
+        <div id="education-list"></div>
+      </section>
 
-			<section id="projects" class="box">
-				<h2>Proyectos</h2>
-				<div class="project">
-					<h3>Proyecto 1</h3>
-					<p>Descripción del proyecto 1.</p>
-				</div>
-				<div class="project">
-					<h3>Proyecto 2</h3>
-					<p>Descripción del proyecto 2.</p>
-				</div>
-			</section>
+      <section class="section" id="certifications-section">
+        <h2 class="section-title">
+          <span class="section-icon">◈</span> <span id="title-certifications">Certificaciones</span>
+        </h2>
+        <div id="certifications-list"></div>
+      </section>
 
-			<section id="contact" class="box">
-				<h2>Contacto</h2>
-				<form id="contactForm">
-					<input type="text" id="name" placeholder="Nombre">
-					<input type="email" id="email" placeholder="Email">
-					<textarea id="message" placeholder="Mensaje"></textarea>
+    </main>
 
-					<input type="text" name="botcheck" style="display:none">
-					<button type="submit">Enviar</button>
-				</form>
-			</section>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
 
-		</div>
-	</div>
-	<footer>
-		&copy; Zurita Maximiliano
-	</footer>
-	<script src="script.js"></script>
+        <div class="avatar" id="avatar">MZ</div>
+
+        <h1 class="name" id="name">—</h1>
+        <p class="current-role" id="current-role">—</p>
+
+        <div class="contact-links" id="contact-links"></div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-label" id="sidebar-label-location">Ubicación</h3>
+          <p class="sidebar-value" id="location">—</p>
+        </div>
+
+        <div class="sidebar-section" id="languages-section">
+          <h3 class="sidebar-label" id="sidebar-label-languages">Idiomas</h3>
+          <div id="languages"></div>
+        </div>
+
+        <div class="sidebar-section" id="softskills-section">
+          <h3 class="sidebar-label" id="sidebar-label-softskills">Soft Skills</h3>
+          <div class="tags" id="soft-skills"></div>
+        </div>
+
+        <div class="controls-row">
+          <div class="seg-control" id="theme-control" aria-label="Toggle theme">
+            <button class="seg-btn" id="seg-dark">☾ Dark</button>
+            <button class="seg-btn" id="seg-light">☀ Light</button>
+          </div>
+          <div class="seg-control" id="lang-control" aria-label="Switch language">
+            <button class="seg-btn" id="seg-es">ES</button>
+            <button class="seg-btn" id="seg-en">EN</button>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
